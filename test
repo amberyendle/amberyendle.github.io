@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<script src="https://proteinpaint.stjude.org/bin/proteinpaint.js"></script>
+<div id="aaa" style="margin:10px"></div>
+<script>
+runproteinpaint({
+    genome: "hg38",
+    gene: "NM_053056",
+    nobox: 1,
+    noheader: 1,
+    noBuiltinTracks: true,
+    nativetracks: "",
+    tracks: [
+        {
+            type: "mds3",
+            name: "COSMIC (Consensus_NMD=True)",
+            custom_variants: [{"chr": "chr11", "pos": 69651184, "mname": "Gln264Ter", "class": "N", "dt": 1, "ref": "C", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651217, "mname": "Glu275Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651217, "mname": "Glu275Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651226, "mname": "Glu278Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651232, "mname": "Glu280Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651232, "mname": "Glu280Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651232, "mname": "Glu280Ter", "class": "N", "dt": 1, "ref": "G", "alt": "T", "occurrence": 1}, {"chr": "chr11", "pos": 69651249, "mname": "Cys285Ter", "class": "N", "dt": 1, "ref": "C", "alt": "A", "occurrence": 1}, {"chr": "chr11", "pos": 69651249, "mname": "Cys285Ter", "class": "N", "dt": 1, "ref": "C", "alt": "A", "occurrence": 1}]
+        },
+        {
+            type: "mds3",
+            name: "St. Jude Clinical Genomics (Consensus_NMD=True)",
+            custom_variants: [{"chr": "chr11", "pos": 69651184, "mname": "Q264*", "class": "N", "dt": 1, "ref": "C", "alt": "T", "occurrence": 1}],
+            onbottom: true
+        }
+    ],
+    mclassOverride: {'className': 'Variant Type', 'classes': {'N': {'label': 'NONSENSE', 'color': '#FF0000', 'desc': 'nonsense variant'}, 'F': {'label': 'FRAMESHIFT', 'color': '#FFA500', 'desc': 'frameshift variant'}}},
+    skewer: {}
+});
+</script>
+</body>
+</html>
